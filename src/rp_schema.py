@@ -104,4 +104,17 @@ INPUT_VALIDATIONS = {
         'required': False,
         'default': False
     },
+
+    # New inputs for audio and video cut
+    'start_time': {
+        # acepta 12, 12.5 o "00:00:12.5"
+        'type': (int, float, str),
+        'required': False,
+        'default': None
+    },
+    'end_time': {
+        'type': (int, float, str),
+        'required': False,
+        'default': None
+    },
 }
